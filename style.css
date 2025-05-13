@@ -1,0 +1,93 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+body.light {
+    background-color: #f9f9f9;
+    color: #222;
+}
+.header {
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.section {
+    padding: 2em;
+}
+.cards {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.card {
+    padding: 1em;
+    border-radius: 10px;
+    background: #444;
+    flex: 1 1 200px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-width: 400px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+}
+.contact-form button {
+    padding: 0.5em;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.gallery {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+.social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+body.light .social a {
+    color: #000;
+}
